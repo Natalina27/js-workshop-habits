@@ -1,7 +1,11 @@
+._hidden {
+	position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0;
+	clip: rect(0,0,0,0); overflow: hidden;
+}
+
 .container {
 	width: 375px;
 	height: 100%;
-	/*max-height: 820px;*/
 	margin: 0 auto;
 	padding: 24px 16px 98px;
 	overflow: hidden;
@@ -217,9 +221,10 @@
 	font-size: 20px;
 	line-height: 1.2;
 	color: #fff;
+	cursor: pointer;
 }
 
-.section__habit .btn--habit-action .btn-icon,
+.section__habit input[type="checkbox"]:checked + .btn-icon,
 .section__habit .btn--habit:hover .btn-icon {
 	background-color: #7343EE;
 	border-color: #7343EE;

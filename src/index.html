@@ -5,155 +5,159 @@
 	<title>Lectrum Habits!</title>
 	<link href="./fonts/TTInterphases/TTInterphases.css" rel="stylesheet">
 	<link href="./css/style.css" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			font-size: 16px;
+			font-family: 'TTInterphases-Medium', sans-serif;
+		}
+		img { max-width: 100% }
+		a { text-decoration: none; }
+		p { padding: 0; margin: 0; }
+		html { box-sizing: border-box; }
+		ul { padding: 0; margin: 0; list-style: none; }
+		*,*:before,*:after { box-sizing: inherit; }
+	</style>
 </head>
-<style>
-	body {
-		margin: 0;
-		font-size: 16px;
-		font-family: 'TTInterphases-Medium', sans-serif;
-	}
-	img { max-width: 100% }
-	a { text-decoration: none; }
-	p { padding: 0; margin: 0; }
-	html { box-sizing: border-box; }
-	ul { padding: 0; margin: 0; list-style: none; }
-	*,*:before,*:after { box-sizing: inherit; }
-</style>
-	<body>
-		<div class="container">
-			<header class="header__wrapper">
-				<p>Доброе утро!</p>
-			</header>
-			<main>
-				<section class="section__week">
-					<div class="week__wrapper">
-						<ul class="week__lists">
-							<li class="week__item week__mon">
-								<div class="week__day">ПН</div>
-								<div class="week__wont">1/5</div>
-							</li>
-							<li class="week__item week__tues">
-								<div class="week__day">ВТ</div>
-								<div class="week__wont">5/5</div>
-							</li>
-							<li class="week__item week__wed">
-								<div class="week__day">СР</div>
-								<div class="week__wont">2/5</div>
-							</li>
-							<li class="week__item week__thurs">
-								<div class="week__day">ЧТ</div>
-								<div class="week__wont">3/5</div>
-							</li>
-							<li class="week__item week__fri">
-								<div class="week__day">ПТ</div>
-								<div class="week__wont">1/5</div>
-							</li>
-							<li class="week__item week__sat">
-								<div class="week__day">СБ</div>
-								<div class="week__wont">3/5</div>
-							</li>
-							<li class="week__item week__sun">
-								<div class="week__day">ВС</div>
-								<div class="week__wont">0/5</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="section__days">
-					<div class="days__wrapper">
-						<ul class="days__lists">
-							<li class="days__item item-active">
-								<div class="days__day">01</div>
-								<div class="days__week">ПН</div>
-							</li>
-							<li class="days__item item-active">
-								<div class="days__day">02</div>
-								<div class="days__week">ВТ</div>
-							</li>
-							<li class="days__item item-active">
-								<div class="days__day">03</div>
-								<div class="days__week">СР</div>
-							</li>
-							<li class="days__item">
-								<div class="days__day">03</div>
-								<div class="days__week">СР</div>
-							</li>
-							<li class="days__item">
-								<div class="days__day">04</div>
-								<div class="days__week">СР</div>
-							</li>
-							<li class="days__item">
-								<div class="days__day">05</div>
-								<div class="days__week">СР</div>
-							</li>
-							<li class="days__item">
-								<div class="days__day">06</div>
-								<div class="days__week">СР</div>
-							</li>
-						</ul>
-					</div>
-				</section>
-				<section class="section__habit">
-					<div class="block__navigation">
-						<button type="button" class="btn navigation__add">
-							<span class="navigation__icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-									<path d="M16.5 7.5h-6v-6a1.5 1.5 0 0 0-3 0v6h-6a1.5 1.5 0 1 0 0 3h6v6a1.5 1.5 0 1 0 3 0v-6h6a1.5 1.5 0 1 0 0-3z" />
-								</svg>
-							</span>
-							Добавить новую привычку
-						</button>
-					</div>
+<body>
+	<div class="container">
+		<header class="header__wrapper">
+			<p>Доброе утро!</p>
+		</header>
+		<main>
+			<section class="section__week">
+				<div class="week__wrapper">
+					<ul class="week__lists">
+						<li class="week__item week__mon">
+							<div class="week__day">ПН</div>
+							<div class="week__wont">1/5</div>
+						</li>
+						<li class="week__item week__tues">
+							<div class="week__day">ВТ</div>
+							<div class="week__wont">5/5</div>
+						</li>
+						<li class="week__item week__wed">
+							<div class="week__day">СР</div>
+							<div class="week__wont">2/5</div>
+						</li>
+						<li class="week__item week__thurs">
+							<div class="week__day">ЧТ</div>
+							<div class="week__wont">3/5</div>
+						</li>
+						<li class="week__item week__fri">
+							<div class="week__day">ПТ</div>
+							<div class="week__wont">1/5</div>
+						</li>
+						<li class="week__item week__sat">
+							<div class="week__day">СБ</div>
+							<div class="week__wont">3/5</div>
+						</li>
+						<li class="week__item week__sun">
+							<div class="week__day">ВС</div>
+							<div class="week__wont">0/5</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section__days">
+				<div class="days__wrapper">
+					<ul class="days__lists">
+						<li class="days__item item-active">
+							<div class="days__day">01</div>
+							<div class="days__week">ПН</div>
+						</li>
+						<li class="days__item item-active">
+							<div class="days__day">02</div>
+							<div class="days__week">ВТ</div>
+						</li>
+						<li class="days__item item-active">
+							<div class="days__day">03</div>
+							<div class="days__week">СР</div>
+						</li>
+						<li class="days__item">
+							<div class="days__day">03</div>
+							<div class="days__week">СР</div>
+						</li>
+						<li class="days__item">
+							<div class="days__day">04</div>
+							<div class="days__week">СР</div>
+						</li>
+						<li class="days__item">
+							<div class="days__day">05</div>
+							<div class="days__week">СР</div>
+						</li>
+						<li class="days__item">
+							<div class="days__day">06</div>
+							<div class="days__week">СР</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="section__habit">
+				<div class="block__navigation">
+					<button type="button" class="btn navigation__add">
+						<span class="navigation__icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+								<path d="M16.5 7.5h-6v-6a1.5 1.5 0 0 0-3 0v6h-6a1.5 1.5 0 1 0 0 3h6v6a1.5 1.5 0 1 0 3 0v-6h6a1.5 1.5 0 1 0 0-3z" />
+							</svg>
+						</span>
+						Добавить новую привычку
+					</button>
+				</div>
 
-					<div class="habit__wrapper">
-						<button type="button" class="btn btn--habit">
-							<span class="btn-icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
-									<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
-								</svg>
-							</span>
-							Почитать книгу
-						</button>
+				<div class="habit__wrapper">
+					<label class="btn--habit">
+						<input type="checkbox" name="habit" class="_hidden">
+						<span class="btn-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+								<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
+							</svg>
+						</span>
+						Почитать книгу
+					</label>
 
-						<button type="button" class="btn btn--habit">
-							<span class="btn-icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
-									<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
-								</svg>
-							</span>
-							Выучить английские слова
-						</button>
+					<label class="btn--habit">
+						<input type="checkbox" name="habit" class="_hidden">
+						<span class="btn-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+								<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
+							</svg>
+						</span>
+						Выучить английские слова
+					</label>
 
-						<button type="button" class="btn btn--habit">
-							<span class="btn-icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
-									<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
-								</svg>
-							</span>
-							Помедитировать
-						</button>
+					<label class="btn--habit">
+						<input type="checkbox" name="habit" class="_hidden">
+						<span class="btn-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+								<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
+							</svg>
+						</span>
+						Помедитировать
+					</label>
 
-						<button type="button" class="btn btn--habit">
-							<span class="btn-icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
-									<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
-								</svg>
-							</span>
-							Позаниматься спортом
-						</button>
+					<label class="btn--habit">
+						<input type="checkbox" name="habit" class="_hidden">
+						<span class="btn-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+								<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
+							</svg>
+						</span>
+						Позаниматься спортом
+					</label>
 
-						<button type="button" class="btn btn--habit">
-							<span class="btn-icon">
-								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
-									<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
-								</svg>
-							</span>
-							Застелить постель
-						</button>
-					</div>
-				</section>
-			</main>
-		</div>
-		<script src='./js/module.js'></script>
-	</body>
+					<label class="btn--habit">
+						<input type="checkbox" name="habit" class="_hidden">
+						<span class="btn-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+								<path d="M17.462.585a2.125 2.125 0 0 1 0 2.826l-9.193 10a1.734 1.734 0 0 1-2.6 0L.536 7.826A2.125 2.125 0 0 1 .536 5a1.733 1.733 0 0 1 2.6 0L6.97 9.172l7.894-8.59a1.734 1.734 0 0 1 2.598.003z"/>
+							</svg>
+						</span>
+						Застелить постель
+					</label>
+				</div>
+			</section>
+		</main>
+	</div>
+</body>
 </html>
