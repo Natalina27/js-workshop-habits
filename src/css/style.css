@@ -1,3 +1,6 @@
+body {
+	background-color: #121B26;
+}
 ._hidden {
 	position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0;
 	clip: rect(0,0,0,0); overflow: hidden;
@@ -12,6 +15,7 @@
 	box-sizing: border-box;
 	background-color: #121B26;
 }
+
 
 .btn {
 	display: inline-block;
@@ -224,11 +228,15 @@
 	cursor: pointer;
 }
 
-.section__habit input[type="checkbox"]:checked + .btn-icon,
-.section__habit .btn--habit:hover .btn-icon {
+.section__habit input[type="checkbox"]:checked + .btn-icon {
 	background-color: #7343EE;
 	border-color: #7343EE;
 	color: #fff;
+}
+
+.section__habit .btn--habit:hover .btn-icon {
+	border-color: #BBBEC0;
+	color: #BBBEC0;
 }
 
 .section__habit .btn--habit:not(:last-child) {
