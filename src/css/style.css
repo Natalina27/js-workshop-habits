@@ -1,6 +1,7 @@
 body {
 	background-color: #121B26;
 }
+
 ._hidden {
 	position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0;
 	clip: rect(0,0,0,0); overflow: hidden;
@@ -178,14 +179,23 @@ body {
 
 
 .section__habit .block__navigation {
+	position: relative;
 	margin-top: 42px;
-	margin-bottom: 30px;
 }
 
 
+.section__habit .block__navigation input[type="text"] {
+	position: absolute; top: 0; left: 64px; z-index: 2;
+	height: 44px; width: calc(100% - 64px); padding: 4px 8px; box-sizing: border-box; border: 1px solid #fff; color: #fff; background: inherit; display: block;
+	border-radius: 6px; font-family: 'TTInterphases-Medium', sans-serif; font-size: 16px; line-height: 1.2; outline: none;
+}
+
 .section__habit .navigation__add {
+	position: relative;
+	z-index: 1;
 	display: flex;
 	align-items: center;
+	width: 100%;
 	font-size: 20px;
 	line-height: 1.2;
 	color: #fff;
@@ -202,6 +212,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-shrink: 0;
 	width: 44px;
 	height: 44px;
 	margin-right: 20px;
@@ -217,15 +228,23 @@ body {
 .section__habit .habit__wrapper {
 	display: flex;
 	flex-direction: column;
+	margin-top: 30px;
 }
 
 .section__habit .btn--habit {
 	display: flex;
 	align-items: center;
+	opacity: 0;
 	font-size: 20px;
 	line-height: 1.2;
 	color: #fff;
 	cursor: pointer;
+	transition: opacity 250ms ease-in-out;
+
+}
+
+.section__habit .btn--habit.habit-init {
+	opacity: 1;
 }
 
 .section__habit input[type="checkbox"]:checked + .btn-icon {
